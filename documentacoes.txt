@@ -1,0 +1,25 @@
+Queries para o Firestore:
+https://cloud.google.com/firestore/docs/query-data/queries?hl=pt-br#web-version-8
+
+Tipos de bens:
+Anotar o código do bem (mapeamento):
+Como pegar valores únicos numa tabela: https://bytefreaks.net/applications/libreoffice-calc-get-the-distinct-unique-values-in-a-column-or-a-list-of-elements
+
+https://github.com/coreui/coreui-icons/tree/main/svg/free
+
+
+Veículo automotor terrestre: caminhão, automóvel, moto, etc.
+Casa
+Terreno
+Outras aplicações e Investimentos
+Quotas ou quinhões de capital
+Outros bens imóveis
+Depósito bancário em conta corrente no País
+OUTROS BENS E DIREITOS
+Apartamento
+Terra nua
+
+Parece que tem um teto de gastos na campanha política, desse modo os gráficos de gastos de campanha por candidato não mudam muito
+
+Precisa colocar os CSV do BR para pegar dados de presidente e vice
+Pensar em como fazer a contabilização dos votos...

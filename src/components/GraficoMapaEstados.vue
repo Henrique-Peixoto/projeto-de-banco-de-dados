@@ -1,5 +1,5 @@
 <template>
-  <highcharts
+  <chart
     :options="op"
     :constructor-type="'mapChart'"
   />  
@@ -18,7 +18,7 @@ HC.maps['brasil'] = BR;
 
 export default {
   components: {
-    highcharts: Chart
+    Chart
   },
   data() {
     return {
@@ -76,9 +76,3 @@ export default {
   },
 }
 </script>
-
-<!-- <style>
-/deep/ .highcharts-button-box {
-  display: none !important;
-}
-</style> -->

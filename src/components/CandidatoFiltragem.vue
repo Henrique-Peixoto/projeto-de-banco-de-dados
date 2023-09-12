@@ -50,7 +50,6 @@
           :options="opcoesCargo"
         />
       </div>
-      <!-- TODO: usar dois inputs para que o usuário defina o intervalo de pesquisa por idade -->
     </div>
     <hr class="bg-info"/>
     <b-table
@@ -84,8 +83,6 @@ export default {
     Treeselect
   },
   data() {
-    // ! Vou deixar opções preselecionadas para diminuir a quantidade de requests
-    // Retirá-las para a versão final
     return {
       selecionadoAno: '2018',
       opcoesAno: [
@@ -212,55 +209,6 @@ export default {
     }
   },
   async mounted() {
-    // Testar gráfico de gastos com campanha com o CLAUDIO DONIZETE, 1600, DP Federal, SP, PSTU, preta, superior incompleto
-
-    // em 2022 é ensino médio completo
-
-    // const ufs = [
-    //   'AC',
-    //   'AL',
-    //   'AP',
-    //   'AM',
-    //   'BA',
-    //   'CE',
-    //   'ES',
-    //   'GO',
-    //   'MA',
-    //   'MT',
-    //   'MS',
-    //   'MG',
-    //   'PA',
-    //   'PB',
-    //   'PR',
-    //   'PE',
-    //   'PI',
-    //   'RJ',
-    //   'RN',
-    //   'RS',
-    //   'RO',
-    //   'RR',
-    //   'SC',
-    //   'SP',
-    //   'SE',
-    //   'TO',
-    //   'DF',
-    // ];
-
-    // let totalPartido = 0;
-    // for (let i = 0; i < ufs.length; i++) {
-    //   console.log(i)
-    //   const dados = await firebaseDb().query('Canditatos_'+ufs[i]+'_18', [
-    //     {
-    //       nomeCampo: 'SG_PARTIDO',
-    //       operacao: '==',
-    //       valorCampo: 'PCO'
-    //     }
-    //   ]);
-    //   dados.forEach(dado => totalPartido += parseFloat(dado['VR_DESPESA_MAX_CAMPANHA'].toString().replace(',','.')));
-    // }
-    // console.log(totalPartido);
-
-
     this.getCandidatos();
   },
   methods: {

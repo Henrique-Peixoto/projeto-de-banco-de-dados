@@ -4,7 +4,6 @@
     <h4 v-if="dadosBens === ''">
       Nenhum bem encontrado para o candidato(a) {{ candidatoSelecionado.nome }}
     </h4>
-    <!-- TODO: tabs para ver bens declarados dos anos de 2018 e 2022 -->
     <div 
       v-else-if="!!dadosBens"
       class="shadow-sm bg-white px-5 py-3 border border-info mb-5"
@@ -35,7 +34,6 @@
 </template>
 
 <script>
-// TODO: colocar ícones para cada tipo de bem (casa, veículo, etc...). Fazer um componente que recebe o número do tipo de bem e renderiza um ícone (ver documentação.txt)
 import firebaseDb from '../firebaseDb';
 import Utils from '../utils';
 

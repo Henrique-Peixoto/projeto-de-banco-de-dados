@@ -13,7 +13,6 @@ export default {
     Chart
   },
   props: {
-    // TODO: no recebimento, compilar os dados de 2018 e 2022
     candidatoSelecionado: {
       type: Object,
       default: () => {}
@@ -88,7 +87,6 @@ export default {
 
         this.opcoesGrafico.series = [{
           name: valorAtual['nome'],
-          // ! Atenção para valores de -1
           data: [
             ano2018,
             ano2022
@@ -98,7 +96,6 @@ export default {
         if (ano2018 <= 1 && ano2022 <= 1) {
           this.opcoesGrafico.series = [{
             name: '',
-            // ! Atenção para valores de -1
             data: [0, 0]
           }];
         }

@@ -15,15 +15,6 @@
           <strong class="text-success">
             R$ {{ formatarNumero(totalPartido2018+totalPartido2022) }}
           </strong>
-          <!-- <strong 
-            v-if="totalPartido2018 != 0"
-            class="text-success"
-          >
-            R$ {{ formatarNumero(totalPartido2018) }}
-          </strong>
-          <strong v-else>
-            R$ {{ formatarNumero(totalPartido2018) }}
-          </strong> -->
         </p>
       </div>
       <div 
@@ -42,18 +33,11 @@
             <div class="text-end">
               <p>
                 <strong class="text-success">
-                  <!-- R$ {{ formatarNumero(candidatoSelecionado['gastos_campanha']) }} -->
                   R$ {{ formatarNumero(totalCandidato) }}
                 </strong>
               </p>
             </div>
           </div>
-          <!-- <p class="d-flex justify-content-between">
-            <span>Percentual do total do partido: </span>
-            <strong class="text-success">
-              {{ formatarNumero(percentualCandidato) }}%
-            </strong>
-          </p> -->
         </div>
         <div v-else>
           <p>Não foram encontrados gastos de campanha.</p>
@@ -140,10 +124,6 @@ export default {
       mdbLogo,
       logoPartido: ''
     }
-  },
-  async mounted() {
-    // TODO: receber dados do candidato selecionado. Mostrar quantos por cento o valor da campanha dele representa do total do partido
-    // ! gastos de campanha podem ser -1
   },
   methods: {
     atualizarTotalCandidato(total) {

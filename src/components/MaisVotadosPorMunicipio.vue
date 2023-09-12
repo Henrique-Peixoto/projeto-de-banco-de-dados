@@ -35,7 +35,6 @@ import '@riophae/vue-treeselect/dist/vue-treeselect.css';
 import GraficoMaisVotado from './GraficoMaisVotado';
 import cidadesDoBrasil from '../cidades.js';
 import Utils from '../utils.js';
-// import firebaseDb from '../firebaseDb';
 
 export default {
   components: {
